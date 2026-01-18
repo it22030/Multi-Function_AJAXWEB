@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Departments</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Faculty & Departments</h1>
+
+        <label for="faculty-select">Select Faculty:</label>
+        <select id="faculty-select" onchange="loadStudents(this.value)">
+            <option value="">--Select--</option>
+            <option value="e">Engineering Faculty</option>
+            <option value="l">Life Science Faculty</option>
+            <option value="s">Science Faculty</option>
+            <option value="a">Arts Faculty</option>
+        </select>
+
+        <div id="output"></div>
+    </div>
+</body>
+</html>
